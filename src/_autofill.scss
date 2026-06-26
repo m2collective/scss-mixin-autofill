@@ -1,6 +1,6 @@
 @use "sass:list";
 
-@mixin autofill($properties: ()) {
+@mixin autofill($actions: ()) {
   &:-webkit-autofill {
     @content;
   }
@@ -9,7 +9,7 @@
     @content;
   }
 
-  @if (list.index($properties, active)) {
+  @if (list.index($actions, active)) {
     &:-webkit-autofill:active {
       @content;
     }
@@ -19,7 +19,7 @@
     }
   }
 
-  @if (list.index($properties, focus)) {
+  @if (list.index($actions, focus)) {
     &:-webkit-autofill:focus {
       @content;
     }
@@ -29,7 +29,7 @@
     }
   }
 
-  @if (list.index($properties, hover)) {
+  @if (list.index($actions, hover)) {
     &:-webkit-autofill:hover {
       @content;
     }
@@ -40,22 +40,22 @@
   }
 }
 
-@mixin autofillDisable($properties: ()) {
-  @include autofill($properties) {
+@mixin autofillDisable($actions: ()) {
+  @include autofill($actions) {
     box-shadow: 0 0 0 9999px white inset !important;
     @content;
   }
 }
 
-@mixin autofillBackgroundColor($color, $properties: ()) {
-  @include autofill($properties) {
+@mixin autofillBackgroundColor($color, $actions: ()) {
+  @include autofill($actions) {
     box-shadow: 0 0 0 9999px $color inset;
     @content;
   }
 }
 
-@mixin autofillTextColor($color, $properties: ()) {
-  @include autofill($properties) {
+@mixin autofillTextColor($color, $actions: ()) {
+  @include autofill($actions) {
     -webkit-text-fill-color: $color !important;
     @content;
   }
