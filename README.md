@@ -40,23 +40,23 @@ To use the package, import it into your project:
 // Return
 
 .demo:autofill{
-    -webkit-text-fill-color:#000!important;
-    box-shadow:inset 0 0 0 9999px #fff!important
+    -webkit-text-fill-color: #000 !important;
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 
 .demo:autofill:active{
-    -webkit-text-fill-color:#000!important;
-    box-shadow:inset 0 0 0 9999px #fff!important
+    -webkit-text-fill-color: #000 !important;
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 
 .demo:autofill:focus{
-    -webkit-text-fill-color:#000!important;
-    box-shadow:inset 0 0 0 9999px #fff!important
+    -webkit-text-fill-color: #000 !important;
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 
 .demo:autofill:hover{
-    -webkit-text-fill-color:#000!important;
-    box-shadow:inset 0 0 0 9999px #fff!important
+    -webkit-text-fill-color:#000 !important;
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 ```
 
@@ -72,19 +72,19 @@ To use the package, import it into your project:
 // Return
 
 .demo:autofill{
-    box-shadow:inset 0 0 0 9999px #fff!important
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 
 .demo:autofill:active{
-    box-shadow:inset 0 0 0 9999px #fff!important
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 
 .demo:autofill:focus{
-    box-shadow:inset 0 0 0 9999px #fff!important
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 
 .demo:autofill:hover{
-    box-shadow:inset 0 0 0 9999px #fff!important
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 ```
 
@@ -100,19 +100,19 @@ To use the package, import it into your project:
 // Return
 
 .demo:autofill{
-    box-shadow:inset 0 0 0 9999px #fff!important
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 
 .demo:autofill:active{
-    box-shadow:inset 0 0 0 9999px #fff!important
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 
 .demo:autofill:focus{
-    box-shadow:inset 0 0 0 9999px #fff!important
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 
 .demo:autofill:hover{
-    box-shadow:inset 0 0 0 9999px #fff!important
+    box-shadow: inset 0 0 0 9999px #fff !important
 }
 ```
 
@@ -128,19 +128,37 @@ To use the package, import it into your project:
 // Return
 
 .demo:autofill{
-    -webkit-text-fill-color:#000!important;
+    -webkit-text-fill-color: #000 !important;
 }
 
 .demo:autofill:active{
-    -webkit-text-fill-color:#000!important;
+    -webkit-text-fill-color: #000 !important;
 }
 
 .demo:autofill:focus{
-    -webkit-text-fill-color:#000!important;
+    -webkit-text-fill-color: #000 !important;
 }
 
 .demo:autofill:hover{
-    -webkit-text-fill-color:#000!important;
+    -webkit-text-fill-color: #000 !important;
+}
+```
+
+## Changing the namespace
+
+You can change the namespace during mixin import and use the mixin with a different namespace:
+
+```scss
+@use "@m2collective/scss-mixin-autofill" as mixin;
+
+.demo {
+    @include mixin.autofillDisable;
+}
+
+// Return
+
+.demo:autofill{
+    box-shadow: inset 0 0 0 9999px #fff!important
 }
 ```
 
