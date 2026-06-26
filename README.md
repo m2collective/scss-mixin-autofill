@@ -24,29 +24,29 @@ To use the package, import it into your project:
 .demo {
     @include autofill((active, hover, focus)) {
         box-shadow: 0 0 0 9999px white inset !important;
-        -webkit-text-fill-color: white !important;
+        -webkit-text-fill-color: black !important;
     }
 }
 
 // Return
 
 .demo:autofill{
-    -webkit-text-fill-color:white!important;
+    -webkit-text-fill-color:#000!important;
     box-shadow:inset 0 0 0 9999px #fff!important
 }
 
 .demo:autofill:active{
-    -webkit-text-fill-color:white!important;
+    -webkit-text-fill-color:#000!important;
     box-shadow:inset 0 0 0 9999px #fff!important
 }
 
 .demo:autofill:focus{
-    -webkit-text-fill-color:white!important;
+    -webkit-text-fill-color:#000!important;
     box-shadow:inset 0 0 0 9999px #fff!important
 }
 
 .demo:autofill:hover{
-    -webkit-text-fill-color:white!important;
+    -webkit-text-fill-color:#000!important;
     box-shadow:inset 0 0 0 9999px #fff!important
 }
 ```
