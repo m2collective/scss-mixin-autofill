@@ -25,8 +25,6 @@ To use the package, import it into your project:
 ### Autofill
 
 ```scss
-@use "@m2collective/scss-mixin-autofill" as *;
-
 .demo {
     @include autofill((active, hover, focus)) {
         box-shadow: 0 0 0 9999px white inset !important;
@@ -60,8 +58,6 @@ To use the package, import it into your project:
 ### AutofillDisable
 
 ```scss
-@use "@m2collective/scss-mixin-autofill" as *;
-
 .demo {
     @include autofillDisable((active, hover, focus));
 }
@@ -88,8 +84,6 @@ To use the package, import it into your project:
 ### AutofillBackgroundColor
 
 ```scss
-@use "@m2collective/scss-mixin-autofill" as *;
-
 .demo {
     @include autofillBackgroundColor(white, (active, hover, focus));
 }
@@ -116,8 +110,6 @@ To use the package, import it into your project:
 ### AutofillTextColor
 
 ```scss
-@use "@m2collective/scss-mixin-autofill" as *;
-
 .demo {
     @include autofillTextColor(black, (active, hover, focus));
 }
@@ -147,16 +139,6 @@ You can change the namespace during mixin import and use the mixin with a differ
 
 ```scss
 @use "@m2collective/scss-mixin-autofill" as mixin;
-
-.demo {
-    @include mixin.autofillDisable;
-}
-
-// Return
-
-.demo:autofill{
-    box-shadow: inset 0 0 0 9999px #fff!important
-}
 ```
 
 ## License
