@@ -1,8 +1,0 @@
-$interval: 1.5 !default;
-
-@function line-spacing(
-  $value,
-  $interval: $interval
-) {
-  @return $value * $interval;
-}
