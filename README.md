@@ -25,6 +25,8 @@ To use the package, import it into your project:
 | autofillBackgroundColor | color, actions |
 | autofillTextColor       | color, actions |
 
+### Autofill
+
 ```scss
 @use "@m2collective/scss-mixin-autofill" as *;
 
@@ -58,6 +60,8 @@ To use the package, import it into your project:
 }
 ```
 
+### AutofillDisable
+
 ```scss
 @use "@m2collective/scss-mixin-autofill" as *;
 
@@ -84,6 +88,8 @@ To use the package, import it into your project:
 }
 ```
 
+### AutofillBackgroundColor
+
 ```scss
 @use "@m2collective/scss-mixin-autofill" as *;
 
@@ -109,6 +115,8 @@ To use the package, import it into your project:
     box-shadow:inset 0 0 0 9999px #fff!important
 }
 ```
+
+### AutofillTextColor
 
 ```scss
 @use "@m2collective/scss-mixin-autofill" as *;
