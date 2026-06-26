@@ -18,12 +18,9 @@ npm i @m2collective/scss-mixin-autofill
 
 To use the package, import it into your project:
 
-| Name                    | Variables      |
-|-------------------------|----------------|
-| autofill                | actions        |
-| autofillDisable         | actions        |
-| autofillBackgroundColor | color, actions |
-| autofillTextColor       | color, actions |
+```scss
+@use "@m2collective/scss-mixin-autofill" as *;
+```
 
 ### Autofill
 
