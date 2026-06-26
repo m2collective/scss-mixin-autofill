@@ -1,0 +1,41 @@
+@use "sass:list";
+
+@mixin autofill($properties...) {
+  &:-webkit-autofill {
+    @content;
+  }
+
+  &:autofill {
+    @content;
+  }
+
+  @if (list.index($properties, 'active')) {
+    &:-webkit-autofill:active {
+      @content;
+    }
+
+    &:autofill:active {
+      @content;
+    }
+  }
+
+  @if (list.index($properties, 'focus')) {
+    &:-webkit-autofill:focus {
+      @content;
+    }
+
+    &:autofill:focus {
+      @content;
+    }
+  }
+
+  @if (list.index($properties, 'hover')) {
+    &:-webkit-autofill:hover {
+      @content;
+    }
+
+    &:autofill:hover {
+      @content;
+    }
+  }
+}
