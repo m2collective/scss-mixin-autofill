@@ -18,6 +18,13 @@ npm i @m2collective/scss-mixin-autofill
 
 To use the package, import it into your project:
 
+| Name                    | Variables      |
+|-------------------------|----------------|
+| autofill                | actions        |
+| autofillDisable         | actions        |
+| autofillBackgroundColor | color, actions |
+| autofillTextColor       | color, actions |
+
 ```scss
 @use "@m2collective/scss-mixin-autofill" as *;
 
@@ -128,17 +135,6 @@ To use the package, import it into your project:
     -webkit-text-fill-color:#000!important;
 }
 ```
-
-## Mixins
-
-The package contains the following mixins to use:
-
-| Name                    | Variables      |
-|-------------------------|----------------|
-| autofill                | actions        |
-| autofillDisable         | actions        |
-| autofillBackgroundColor | color, actions |
-| autofillTextColor       | color, actions |
 
 ## License
 
