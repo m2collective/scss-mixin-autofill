@@ -55,12 +55,12 @@ To use the package, import it into your project:
 
 The package contains the following mixins to use:
 
-| Name                    | Variables         |
-|-------------------------|-------------------|
-| autofill                | properties        |
-| autofillDisable         | properties        |
-| autofillBackgroundColor | color, properties |
-| autofillTextColor       | color, properties |
+| Name                    | Variables      |
+|-------------------------|----------------|
+| autofill                | actions        |
+| autofillDisable         | actions        |
+| autofillBackgroundColor | color, actions |
+| autofillTextColor       | color, actions |
 
 ## License
 
