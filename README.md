@@ -51,6 +51,84 @@ To use the package, import it into your project:
 }
 ```
 
+```scss
+@use "@m2collective/scss-mixin-autofill" as *;
+
+.demo {
+    @include autofillDisable((active, hover, focus));
+}
+
+// Return
+
+.demo:autofill{
+    box-shadow:inset 0 0 0 9999px #fff!important
+}
+
+.demo:autofill:active{
+    box-shadow:inset 0 0 0 9999px #fff!important
+}
+
+.demo:autofill:focus{
+    box-shadow:inset 0 0 0 9999px #fff!important
+}
+
+.demo:autofill:hover{
+    box-shadow:inset 0 0 0 9999px #fff!important
+}
+```
+
+```scss
+@use "@m2collective/scss-mixin-autofill" as *;
+
+.demo {
+    @include autofillBackgroundColor(white, (active, hover, focus));
+}
+
+// Return
+
+.demo:autofill{
+    box-shadow:inset 0 0 0 9999px #fff!important
+}
+
+.demo:autofill:active{
+    box-shadow:inset 0 0 0 9999px #fff!important
+}
+
+.demo:autofill:focus{
+    box-shadow:inset 0 0 0 9999px #fff!important
+}
+
+.demo:autofill:hover{
+    box-shadow:inset 0 0 0 9999px #fff!important
+}
+```
+
+```scss
+@use "@m2collective/scss-mixin-autofill" as *;
+
+.demo {
+    @include autofillTextColor(black, (active, hover, focus));
+}
+
+// Return
+
+.demo:autofill{
+    -webkit-text-fill-color:#000!important;
+}
+
+.demo:autofill:active{
+    -webkit-text-fill-color:#000!important;
+}
+
+.demo:autofill:focus{
+    -webkit-text-fill-color:#000!important;
+}
+
+.demo:autofill:hover{
+    -webkit-text-fill-color:#000!important;
+}
+```
+
 ## Mixins
 
 The package contains the following mixins to use:
