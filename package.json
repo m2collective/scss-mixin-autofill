@@ -1,0 +1,38 @@
+{
+  "name": "@m2collective/scss-mixin-autofill",
+  "version": "0.1.0",
+  "description": "A package for integrating a mixin for styling auto-completion of input fields.",
+  "keywords": [
+    "m2collective",
+    "scss",
+    "mixin",
+    "autofill",
+    "style"
+  ],
+  "main": "index.scss",
+  "exports": {
+    ".": {
+      "sass": "./index.scss",
+      "default": "./index.scss"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "bu0nq",
+    "email": "hello@bu0nq.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m2collective/scss-mixin-autofill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m2collective/scss-mixin-autofill/issues"
+  },
+  "homepage": "https://github.com/m2collective/scss-mixin-autofill#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
