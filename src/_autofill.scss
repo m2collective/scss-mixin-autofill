@@ -40,21 +40,21 @@
   }
 }
 
-@mixin autofillDisable($actions: ()) {
+@mixin autofill-disable($actions: ()) {
   @include autofill($actions) {
     box-shadow: 0 0 0 9999px white inset !important;
     @content;
   }
 }
 
-@mixin autofillBackgroundColor($color, $actions: ()) {
+@mixin autofill-background-color($color, $actions: ()) {
   @include autofill($actions) {
     box-shadow: 0 0 0 9999px $color inset;
     @content;
   }
 }
 
-@mixin autofillTextColor($color, $actions: ()) {
+@mixin autofill-text-color($color, $actions: ()) {
   @include autofill($actions) {
     -webkit-text-fill-color: $color !important;
     @content;
