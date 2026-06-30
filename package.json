@@ -1,13 +1,14 @@
 {
   "name": "@m2collective/scss-mixin-autofill",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A package for integrating a mixin for styling auto-completion of input fields.",
   "keywords": [
     "m2collective",
     "scss",
     "mixin",
     "autofill",
-    "style"
+    "style",
+    "front-end"
   ],
   "main": "index.scss",
   "exports": {
