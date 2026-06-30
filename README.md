@@ -59,7 +59,7 @@ To use the package, import it into your project:
 
 ```scss
 .demo {
-    @include autofillDisable((active, hover, focus));
+    @include autofill-disable((active, hover, focus));
 }
 
 // Return
@@ -85,7 +85,7 @@ To use the package, import it into your project:
 
 ```scss
 .demo {
-    @include autofillBackgroundColor(white, (active, hover, focus));
+    @include autofill-background-color(white, (active, hover, focus));
 }
 
 // Return
@@ -111,7 +111,7 @@ To use the package, import it into your project:
 
 ```scss
 .demo {
-    @include autofillTextColor(black, (active, hover, focus));
+    @include autofill-text-color(black, (active, hover, focus));
 }
 
 // Return
